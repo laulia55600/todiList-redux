@@ -2,6 +2,11 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
 import App from './App';
+import { createStore } from 'redux';
+import { todoAppReducer } from './store/reducers';
+
+
+const store = createStore(todoAppReducer);
 
 
 ReactDOM.render(
